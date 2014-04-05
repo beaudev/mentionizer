@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Mentionizer</title>
+
+  <link rel="stylesheet" href="/mentionizer/assets/application-b6c8281a5e4378b42ed09625f8b6e278.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="heading">
+  <img class="logo" src="img/logo.svg" alt="">
+  <h1 class="title">Mentionizer</h1>
+</div>
+
+<div class="content">
+  <p>It's good <strong>Twitter Etiquette&#8482;</strong> to mention the person who wrote an article when tweeting about it!</p>
+
+  <p><strong>Mentionizer</strong> helps you quickly discover the twitter handle of whoever wrote the blog post you're reading, so that you don't have to scavenge for information on the page.</p>
+
+  <a href="javascript:!function(){function e(n){var e=new XMLHttpRequest;e.open('POST','http://mentionizer.herokuapp.com/users',!0),e.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');var t=encodeURIComponent(document.documentElement.outerHTML);t=t.replace('%20','+').replace('%3D','='),e.send('html='+t),e.onreadystatechange=function(){if(4===e.readyState&&200===e.status){var t=JSON.parse(e.responseText)[0];n(t?t.username:null)}}}e(function(t){if(t){var e=document.createElement('div'),n=['position: fixed;','top: 50%;','left: 50%;','width: 400px;','height: 150px;','margin-top: -75px;','margin-left: -200px;','text-align: center;','z-index: 9999;','background-color: white;','border-radius: 5px;','line-height: 150px;','font-size: 20px;','font-family: Helvetica Neue, Arial, sans-serif;'].join('');e.setAttribute('style',n),e.textContent=t,document.body.appendChild(e)}})}();" class="bookmarklet">Mentionizer</a>
+</div>
+
+  </div>
+</body>
+</html>
+
